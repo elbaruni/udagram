@@ -39,3 +39,5 @@ venv/
 # Elastic Beanstalk Files
 
 .env
+
+AWS_SECRET_ACCESS_KEY
