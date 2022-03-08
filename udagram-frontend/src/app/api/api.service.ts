@@ -16,7 +16,7 @@ const API_HOST = environment.apiHost;
 export class ApiService {
   httpOptions = {
     headers: new HttpHeaders({
-      "Content-Type": "application/octet-stream",
+      "Content-Type": "application/json",
     }),
   };
 

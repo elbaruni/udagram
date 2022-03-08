@@ -3,16 +3,6 @@ import { config } from "./config/config";
 
 // Configure AWS
 const credentials = new AWS.SharedIniFileCredentials({ profile: "default" });
-/* credentials["sessionToken"] =
-  "FwoGZXIvYXdzEEIaDJG3JX7bTxy8tCdt1iK8AcHMHJGyvL0INy3ngeQ0zlNFWM+s9zOe9Gj5umPsp5WgUXf4ggMNJPmeAI8Y12GbULg/1T2UnOTJKq+pPxsvgnZRYJoiTr5Wviebe6HZGBdlWLafGom7GOoOhHnNdHzxyHICeV3D+cp3dgxurxsm9yXBJ6ZCMhyL3ve3kxdfKKMEqKHGVXRgxvsbiBJLSv9ACbWcTnG7YaTB+cI/m4Ap0DbiRoiyIXtYmgnhsaCkdPOLcnZ0Z+HpsA2njDoiKK6tlZEGMi0841/faTPMQX0BsEQiqpe2nB13xfZH+6W1Lo9lfdbw9y5vpWl5TM8JfdghHC4=";
-  */
-/* const credentials = new AWS.Credentials({
-  accessKeyId: "ASIA6QL6PNGUPF32OY65",
-  secretAccessKey: "OR1K6CqNhFoBRImjoWeHTe+CktwTGxWX8rvUIzJZ",
-  sessionToken:
-    "FwoGZXIvYXdzEEIaDJG3JX7bTxy8tCdt1iK8AcHMHJGyvL0INy3ngeQ0zlNFWM+s9zOe9Gj5umPsp5WgUXf4ggMNJPmeAI8Y12GbULg/1T2UnOTJKq+pPxsvgnZRYJoiTr5Wviebe6HZGBdlWLafGom7GOoOhHnNdHzxyHICeV3D+cp3dgxurxsm9yXBJ6ZCMhyL3ve3kxdfKKMEqKHGVXRgxvsbiBJLSv9ACbWcTnG7YaTB+cI/m4Ap0DbiRoiyIXtYmgnhsaCkdPOLcnZ0Z+HpsA2njDoiKK6tlZEGMi0841/faTPMQX0BsEQiqpe2nB13xfZH+6W1Lo9lfdbw9y5vpWl5TM8JfdghHC4=",
-}); */
-console.log(credentials);
 AWS.config.credentials = credentials;
 
 export const s3 = new AWS.S3({
