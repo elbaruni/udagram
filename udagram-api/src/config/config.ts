@@ -12,7 +12,7 @@ export const config = {
   aws_profile: process.env.AWS_PROFILE,
   aws_media_bucket: process.env.AWS_BUCKET,
   url: process.env.URL,
-  accessKeyId: process.env.AWS_ACCESS_KEY_ID,
+  accessKeyId: process.env.AWS_ACCESS_KEY,
   secretAccessKey: process.env.AWS_SECRET_ACCESS_KEY,
   jwt: {
     secret: process.env.JWT_SECRET,
