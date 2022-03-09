@@ -17,7 +17,7 @@ const credentials = new AWS.Credentials({
   accessKeyId: config.accessKeyId,
   secretAccessKey: config.secretAccessKey,
 });
-console.log(credentials);
+
 AWS.config.credentials = credentials;
 
 export const s3 = new AWS.S3({
